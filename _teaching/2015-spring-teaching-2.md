@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate Course"
 #permalink: /teaching/2015-spring-teaching-1
 venue: "Johns Hopkins Univeristy"
-date: 2024-01
+date: 2024-01-31
 #location: "City, Country"
 ---
 
