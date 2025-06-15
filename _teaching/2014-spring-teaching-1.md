@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 # permalink: /teaching/2014-spring-teaching-1
 venue: "Johns Hopkins University"
-date: 2023-08
+date: 2023-09-01
 # location: "City, Country"
 ---
 
