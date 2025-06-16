@@ -7,7 +7,7 @@ author_profile: true
 
 Feel free to reach out via
 
-- 📧 Email: [your.email@example.com](mailto:your.email@example.com)  
-- 🌐 Website: [yourwebsite.com](https://yourwebsite.com)  
-- 🐙 GitHub: [@YourGitHub](https://github.com/YourGitHub)  
+- 📧 Email: [ymu7@jh.edu](mailto:ymu7@jh.edu)  
+- 🌐 Website: [infinitemu.github.io](https://infinitemu.github.io)  
+- 🐙 GitHub: [@InfiniteMu](https://github.com/InfiniteMu)  
 - 📍 Location: Baltimore, MD
