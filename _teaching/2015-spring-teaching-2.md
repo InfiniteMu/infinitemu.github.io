@@ -1,20 +1,12 @@
 ---
-title: "Elements of micro"
+title: "Elements of Micro"
 collection: teaching
 type: "Undergraduate Course"
 #permalink: /teaching/2015-spring-teaching-1
 venue: "Johns Hopkins Univeristy"
 date: 2024-01-31
 #location: "City, Country"
+github: "https://github.com/InfiniteMu/Elements-of-Micro-SP24"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+[View course materials on GitHub]({{page.github}})
