@@ -262,3 +262,9 @@
     }
   }
 }
+.sidebar--no-avatar {
+  @include breakpoint($large) {
+    @include span(0 of 12);  // Collapse the sidebar
+    display: none;           // Fully remove sidebar space
+  }
+}
