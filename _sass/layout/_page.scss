@@ -23,6 +23,15 @@
     @include suffix(2 of 12);
   }
 
+  // When sidebar is hidden (no avatar), remove suffix space
+  .sidebar--no-avatar ~ & {
+    @include breakpoint($large) {
+      @include span(12 of 12);       // full width
+      @include prefix(0);            // no left margin
+      @include suffix(0);            // no right margin
+    }
+  }
+
   .page__inner-wrap {
     @include full();
 
