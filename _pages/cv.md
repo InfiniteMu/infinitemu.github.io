@@ -1,3 +1,10 @@
+---
+title: "CV"
+permalink: /cv/
+layout: single
+author_profile: true
+---
+
 ## CV
 
 Find my CV below, or [download it here](/files/Yingfei_Mu_CV.pdf).
