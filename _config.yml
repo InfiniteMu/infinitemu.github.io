@@ -23,9 +23,9 @@ repository               : "infinitemu/infinitemu.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Yingfei Mu"
   pronouns         : "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  # bio              : "Short biography for the left-hand sidebar"
   location         : "Baltimore, MD"
   employer         : "Johns Hopkins University"
   uri              : # URL
