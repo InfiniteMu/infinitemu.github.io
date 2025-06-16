@@ -5,6 +5,7 @@ type: "Undergraduate course"
 # permalink: /teaching/2014-spring-teaching-1
 venue: "Johns Hopkins University"
 date: 2023-09-01
+nolink: true
 # location: "City, Country"
 github: "https://github.com/InfiniteMu/Game-Theory-FA23"
 ---
