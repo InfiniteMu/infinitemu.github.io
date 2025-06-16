@@ -5,9 +5,7 @@ layout: single
 author_profile: true
 ---
 
-## Get in Touch
-
-Feel free to reach out:
+Feel free to reach out via
 
 - 📧 Email: [your.email@example.com](mailto:your.email@example.com)  
 - 🌐 Website: [yourwebsite.com](https://yourwebsite.com)  
