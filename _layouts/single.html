@@ -107,3 +107,7 @@ layout: default
     </div>
   {% endif %}
 </div>
+
+{% if page.url == "/" %}
+  {% include sidebar.html %}
+{% endif %}
