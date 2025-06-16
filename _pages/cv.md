@@ -2,7 +2,7 @@
 title: " "
 permalink: /cv/
 layout: single
-author_profile: true
+author_profile: false
 ---
 
 <!-- Find my CV below, or [download it here](/files/Yingfei_Mu_CV.pdf). -->
