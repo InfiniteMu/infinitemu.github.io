@@ -2,7 +2,7 @@
 title: "Contact"
 permalink: /contact/
 layout: single
-author_profile: true
+author_profile: false
 ---
 
 Feel free to reach out via
