@@ -9,9 +9,9 @@ date: 2023-09-01
 github: "https://github.com/InfiniteMu/Game-Theory-FA23"
 ---
 
-[View course materials on GitHub]({{ page.github }})
+[View course materials on GitHub]({{ https://github.com/InfiniteMu/Game-Theory-FA23 }})
 
-[//]: This is a description of a teaching experience. You can use markdown like any other post.
+<!-- This is a description of a teaching experience. You can use markdown like any other post. -->
 
 [//]: Heading 1
 [//]: ======
