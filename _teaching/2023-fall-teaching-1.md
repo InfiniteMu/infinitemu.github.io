@@ -1,10 +1,12 @@
 ---
 title: "Undergraduate Game Theory"
 collection: teaching
-type: "Undergraduate course"
+type: "Undergraduate Course"
+role: "Teaching Assistant"
 # permalink: /teaching/2014-spring-teaching-1
 venue: "Johns Hopkins University"
 date: 2023-09-01
+term: "Fall 2023"
 nolink: true
 # location: "City, Country"
 github: "https://github.com/InfiniteMu/Game-Theory-FA23"

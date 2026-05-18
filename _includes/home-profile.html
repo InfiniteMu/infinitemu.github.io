@@ -1,0 +1,55 @@
+{% include base_path %}
+{% assign author = site.author %}
+
+<section class="home-profile" aria-labelledby="home-profile-title">
+  <div class="home-profile__photo">
+    {% if author.avatar %}
+      {% if author.avatar contains "://" %}
+        <img src="{{ author.avatar }}" alt="{{ author.name }}">
+      {% else %}
+        <img src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" alt="{{ author.name }}">
+      {% endif %}
+    {% endif %}
+  </div>
+
+  <div class="home-profile__body">
+    <h1 id="home-profile-title">{{ author.name | default: site.title }}</h1>
+
+    <p class="home-profile__meta">
+      {% if author.employer %}<span>{{ author.employer }}</span>{% endif %}
+      {% if author.location %}<span>{{ author.location }}</span>{% endif %}
+      {% if author.pronouns %}<span>{{ author.pronouns }}</span>{% endif %}
+    </p>
+
+    <div class="home-profile__content">
+      {{ include.profile_content }}
+    </div>
+
+    <nav class="home-profile__links" aria-label="Profile links">
+      {% if author.email %}
+        <a href="mailto:{{ author.email }}">Email</a>
+      {% endif %}
+      {% if author.github %}
+        <a href="https://github.com/{{ author.github }}">GitHub</a>
+      {% endif %}
+      {% if author.googlescholar %}
+        <a href="{{ author.googlescholar }}">Scholar</a>
+      {% endif %}
+      {% if author.linkedin %}
+        {% if author.linkedin contains "://" %}
+          <a href="{{ author.linkedin }}">LinkedIn</a>
+        {% else %}
+          <a href="https://www.linkedin.com/in/{{ author.linkedin }}">LinkedIn</a>
+        {% endif %}
+      {% endif %}
+      {% if author.twitter %}
+        {% if author.twitter contains "://" %}
+          <a href="{{ author.twitter }}">X</a>
+        {% else %}
+          <a href="https://x.com/{{ author.twitter | replace: "@", "" }}">X</a>
+        {% endif %}
+      {% endif %}
+      <a class="home-profile__cv" href="{{ '/files/Yingfei_Mu_CV.pdf' | prepend: base_path }}" download>Download CV</a>
+    </nav>
+  </div>
+</section>

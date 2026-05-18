@@ -16,8 +16,9 @@ layout: default
   {% include sidebar.html %}
 
   <div class="archive">
+    {% assign clean_page_title = page.title | default: "" | strip %}
     {% unless page.header.overlay_color or page.header.overlay_image %}
-      <h1 class="page__title">{{ page.title }}</h1>
+      {% if clean_page_title != "" %}<h1 class="page__title">{{ page.title }}</h1>{% endif %}
     {% endunless %}
     {{ content }}
   </div>

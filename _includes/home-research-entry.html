@@ -1,0 +1,32 @@
+{% include base_path %}
+
+<div class="home-entry">
+  <h4>
+    {% unless include.post.nolink %}
+      <a href="{{ include.post.url | prepend: base_path }}">{{ include.post.title }}</a>
+    {% else %}
+      {{ include.post.title }}
+    {% endunless %}
+  </h4>
+  {% if include.post.coauthors %}
+    <p>
+      with
+      {% for author in include.post.coauthors %}
+        {% if author.url %}<a href="{{ author.url }}">{{ author.name }}</a>{% else %}{{ author.name }}{% endif %}{% unless forloop.last %}, {% endunless %}
+      {% endfor %}
+    </p>
+  {% endif %}
+  {% if include.post.venue or include.post.date %}
+    <p>
+      {% if include.post.venue %}<span>{{ include.post.venue }}</span>{% endif %}
+      {% if include.post.date %}<span>{{ include.post.date | date: "%Y" }}</span>{% endif %}
+    </p>
+  {% endif %}
+  {% if include.post.publicationurl or include.post.paperurl %}
+    <p>
+      {% if include.post.publicationurl %}<a href="{{ include.post.publicationurl }}">Published version</a>{% endif %}
+      {% if include.post.publicationurl and include.post.paperurl %} · {% endif %}
+      {% if include.post.paperurl %}<a href="{{ include.post.paperurl }}">Paper</a>{% endif %}
+    </p>
+  {% endif %}
+</div>

@@ -10,6 +10,10 @@
   outline-offset: -2px;
 }
 
+@mixin box-sizing($model) {
+  box-sizing: $model;
+}
+
 /*
    em function
    ========================================================================== */

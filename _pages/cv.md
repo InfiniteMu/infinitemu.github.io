@@ -1,10 +1,10 @@
 ---
-title: " "
+title: "CV"
 permalink: /cv/
 layout: single
 author_profile: false
 ---
 
-<!-- Find my CV below, or [download it here](/files/Yingfei_Mu_CV.pdf). -->
+[Download CV](/files/Yingfei_Mu_CV.pdf){: .btn .btn--primary}
 
-<!-- <embed src="/files/Yingfei_Mu_CV.pdf" width="100%" height="600px" type="application/pdf"> -->
+<iframe class="cv-embed" src="/files/Yingfei_Mu_CV.pdf" title="Yingfei Mu CV"></iframe>
