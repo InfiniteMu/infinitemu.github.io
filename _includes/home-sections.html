@@ -1,7 +1,7 @@
 {% include base_path %}
 
 <div class="home-sections">
-  <section class="home-section" aria-labelledby="home-education">
+  <section id="education" class="home-section" aria-labelledby="home-education">
     <h2 id="home-education">Education</h2>
     <div class="education-list">
       <p class="education-item"><strong>Johns Hopkins University</strong> · Ph.D., Economics; M.A., Economics</p>
@@ -10,7 +10,7 @@
     </div>
   </section>
 
-  <section class="home-section" aria-labelledby="home-research">
+  <section id="research" class="home-section" aria-labelledby="home-research">
     <h2 id="home-research">Research</h2>
     {% assign publication_posts = site.publications | where: "category", "publications" %}
     {% assign working_paper_posts = site.publications | where: "category", "workingpapers" %}
@@ -38,7 +38,7 @@
     {% endif %}
   </section>
 
-  <section class="home-section" aria-labelledby="home-teaching">
+  <section id="teaching" class="home-section" aria-labelledby="home-teaching">
     <h2 id="home-teaching">Teaching</h2>
     {% for post in site.teaching reversed %}
       <div class="home-entry">
