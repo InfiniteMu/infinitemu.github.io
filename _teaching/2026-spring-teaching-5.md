@@ -9,3 +9,5 @@ term: "Spring 2026"
 nolink: true
 github: "https://github.com/InfiniteMu/Grad_Micro_Theory"
 ---
+
+[View course materials on GitHub]({{page.github}})
