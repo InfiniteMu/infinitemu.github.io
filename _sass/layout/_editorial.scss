@@ -20,6 +20,7 @@ html[data-theme="dark"] {
   --global-text-color: #1c1a17;
   --global-text-color-light: #81796f;
   --global-thead-color: #e5ded3;
+  --editorial-content-width: 1040px;
   --editorial-display-font: "Palatino Linotype", Palatino, "Book Antiqua", Georgia, serif;
 }
 
@@ -50,7 +51,7 @@ a {
   position: relative;
   top: auto;
   width: auto;
-  max-width: 920px;
+  max-width: var(--editorial-content-width);
   margin: clamp(2rem, 5vw, 3.75rem) auto 0;
   padding: clamp(1.8rem, 4vw, 2.75rem) clamp(1.25rem, 4vw, 2rem) 0;
   background: transparent;
@@ -120,7 +121,7 @@ a {
 }
 
 #main {
-  max-width: 920px;
+  max-width: var(--editorial-content-width);
   margin: 0 auto;
   padding: 0 clamp(1.25rem, 4vw, 2rem);
   animation: none;
@@ -423,7 +424,7 @@ a {
 }
 
 .page__footer footer {
-  max-width: 920px;
+  max-width: var(--editorial-content-width);
   padding: 1rem clamp(1.25rem, 4vw, 2rem) 1.25rem;
 }
 
