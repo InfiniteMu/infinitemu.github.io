@@ -12,4 +12,4 @@ nolink: true
 github: "https://github.com/InfiniteMu/Elements-of-Micro-SP24"
 ---
 
-[View course materials on GitHub]({{page.github}})
+[Course materials]({{page.github}})

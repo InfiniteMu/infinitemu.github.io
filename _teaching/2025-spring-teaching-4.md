@@ -12,4 +12,4 @@ nolink: true
 github: "https://github.com/InfiniteMu/Micro-Theory-SP25"
 ---
 
-[View course materials on GitHub]({{page.github}})
+[Course materials]({{page.github}})

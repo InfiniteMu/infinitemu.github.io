@@ -10,4 +10,4 @@ nolink: true
 github: "https://github.com/InfiniteMu/Grad_Micro_Theory"
 ---
 
-[View course materials on GitHub]({{page.github}})
+[Course materials]({{page.github}})

@@ -12,7 +12,7 @@ nolink: true
 github: "https://github.com/InfiniteMu/Game-Theory-FA23"
 ---
 
-[View course materials on GitHub]({{page.github}})
+[Course materials]({{page.github}})
 
 <!-- This is a description of a teaching experience. You can use markdown like any other post. -->
 
