@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="iso-8859-1"?>
-<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg height="800px" width="800px" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 viewBox="0 0 405.747 405.747" xml:space="preserve">
-<g>
-	<path style="fill:#010002;" d="M310.277,107.305c-43.976,0-92.099,63.076-107.475,84.968
-		c-15.52-22.071-63.487-84.771-107.332-84.771c-52.64,0-95.47,42.83-95.47,95.47s42.83,95.47,95.47,95.47
-		c43.976,0,92.099-63.076,107.475-84.968c15.52,22.071,63.488,84.771,107.332,84.771c52.64,0,95.47-42.83,95.47-95.47
-		S362.917,107.305,310.277,107.305z M95.47,286.508c-46.064,0-83.536-37.472-83.536-83.536s37.472-83.536,83.536-83.536
-		c40.509,0,89.384,67.766,100.214,83.536C184.854,218.742,135.979,286.508,95.47,286.508z M310.277,286.311
-		c-40.509,0-89.384-67.766-100.214-83.536c10.824-15.77,59.704-83.536,100.214-83.536c46.064,0,83.536,37.472,83.536,83.536
-		S356.341,286.311,310.277,286.311z"/>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Infinity mark">
+  <rect width="512" height="512" rx="104" fill="#f7f1df"/>
+  <path
+    d="M96 256c0-78 80-110 160 0s160 78 160 0-80-110-160 0-160 78-160 0"
+    fill="none"
+    stroke="#1c1a17"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="58"/>
+  <path
+    d="M117 256c0-54 58-76 139 0s139 54 139 0-58-76-139 0-139 54-139 0"
+    fill="none"
+    stroke="#7f4435"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="18"/>
+  <circle cx="256" cy="256" r="15" fill="#f7f1df"/>
 </svg>
