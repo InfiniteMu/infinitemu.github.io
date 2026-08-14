@@ -187,7 +187,7 @@ a {
 
 .home-profile {
   display: grid;
-  grid-template-columns: 178px minmax(0, 1fr);
+  grid-template-columns: 220px minmax(0, 1fr);
   gap: clamp(2rem, 5vw, 3.25rem);
   align-items: start;
   margin: 0 0 clamp(3rem, 6vw, 4.75rem);
@@ -197,7 +197,7 @@ a {
 
 .home-profile__photo img {
   display: block;
-  width: 178px;
+  width: 220px;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border: 0;
@@ -448,7 +448,7 @@ a {
   }
 
   .home-profile__photo img {
-    width: min(62vw, 210px);
+    width: min(70vw, 240px);
   }
 
   .home-profile__links .home-profile__cv {
