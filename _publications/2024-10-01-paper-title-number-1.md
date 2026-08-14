@@ -12,8 +12,6 @@ coauthors:
   - name: "Eric Zou"
     url: "https://www.eric-zou.com/"
 publicationurl: 'https://doi.org/10.1162/rest_a_01477'
-paperurl: 'http://infinitemu.github.io/files/paper1.pdf'
+link: 'https://doi.org/10.1162/rest_a_01477'
 ---
-Coauthored with [Edward Rubin](https://edrub.in) and [Eric Zou](https://www.eric-zou.com/).
-
-[Published version](https://doi.org/10.1162/rest_a_01477) · [Paper](http://infinitemu.github.io/files/paper1.pdf)
+with [Edward Rubin](https://edrub.in) and [Eric Zou](https://www.eric-zou.com/).

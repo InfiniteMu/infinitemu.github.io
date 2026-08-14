@@ -54,7 +54,11 @@
         {% if post.collection == 'teaching' %}
           <p> {% if post.role %}{{ post.role }}, {% endif %}{{ post.type }}, <i>{{ post.venue }}</i>, {% if post.term %}{{ post.term }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %} </p>
         {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
+          {% if post.category == 'publications' and post.venue %}
+            <p>Published in <i>{{ post.venue }}</i>{% if post.date %}, {{ post.date | date: "%Y" }}{% endif %} </p>
+          {% elsif post.venue or post.date %}
+            <p>{% if post.venue %}<i>{{ post.venue }}</i>{% endif %}{% if post.venue and post.date %}, {% endif %}{% if post.date %}{{ post.date | date: "%Y" }}{% endif %}</p>
+          {% endif %}
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
@@ -66,9 +70,9 @@
     {% endif %}
     
     {% if post.publicationurl and post.paperurl %}
-      <p><a href="{{ post.publicationurl }}">Published version</a> | <a href="{{ post.paperurl }}">Paper</a></p>
+      <p><a href="{{ post.publicationurl }}">Publication</a> | <a href="{{ post.paperurl }}">PDF</a></p>
     {% elsif post.publicationurl %}
-      <p><a href="{{ post.publicationurl }}">Published version</a></p>
+      <p><a href="{{ post.publicationurl }}">Publication</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
       <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
     {% elsif post.citation and post.paperurl and post.slidesurl %}

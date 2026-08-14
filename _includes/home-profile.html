@@ -1,7 +1,7 @@
 {% include base_path %}
 {% assign author = site.author %}
 
-<section class="home-profile" aria-labelledby="home-profile-title">
+<section class="home-profile" aria-label="{{ author.name | default: site.title }}">
   <div class="home-profile__photo">
     {% if author.avatar %}
       {% if author.avatar contains "://" %}
@@ -13,14 +13,6 @@
   </div>
 
   <div class="home-profile__body">
-    <h1 id="home-profile-title">{{ author.name | default: site.title }}</h1>
-
-    <p class="home-profile__meta">
-      {% if author.employer %}<span>{{ author.employer }}</span>{% endif %}
-      {% if author.location %}<span>{{ author.location }}</span>{% endif %}
-      {% if author.pronouns %}<span>{{ author.pronouns }}</span>{% endif %}
-    </p>
-
     <div class="home-profile__content">
       {{ include.profile_content }}
     </div>
@@ -33,7 +25,7 @@
         <a href="https://github.com/{{ author.github }}">GitHub</a>
       {% endif %}
       {% if author.googlescholar %}
-        <a href="{{ author.googlescholar }}">Scholar</a>
+        <a href="{{ author.googlescholar }}">Google Scholar</a>
       {% endif %}
       {% if author.linkedin %}
         {% if author.linkedin contains "://" %}
@@ -49,7 +41,6 @@
           <a href="https://x.com/{{ author.twitter | replace: "@", "" }}">X</a>
         {% endif %}
       {% endif %}
-      <a class="home-profile__cv" href="{{ '/files/Yingfei_Mu_CV.pdf' | prepend: base_path }}" download>Download CV</a>
     </nav>
   </div>
 </section>

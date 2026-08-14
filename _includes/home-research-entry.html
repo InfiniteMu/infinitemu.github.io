@@ -2,11 +2,15 @@
 
 <div class="home-entry">
   <h4>
-    {% unless include.post.nolink %}
-      <a href="{{ include.post.url | prepend: base_path }}">{{ include.post.title }}</a>
-    {% else %}
+    {% if include.post.publicationurl %}
+      <a href="{{ include.post.publicationurl }}">{{ include.post.title }}</a>
+    {% elsif include.post.link %}
+      <a href="{{ include.post.link }}">{{ include.post.title }}</a>
+    {% elsif include.post.nolink %}
       {{ include.post.title }}
-    {% endunless %}
+    {% else %}
+      <a href="{{ include.post.url | prepend: base_path }}">{{ include.post.title }}</a>
+    {% endif %}
   </h4>
   {% if include.post.coauthors %}
     <p>
@@ -22,11 +26,9 @@
       {% if include.post.date %}<span>{{ include.post.date | date: "%Y" }}</span>{% endif %}
     </p>
   {% endif %}
-  {% if include.post.publicationurl or include.post.paperurl %}
+  {% if include.post.paperurl %}
     <p>
-      {% if include.post.publicationurl %}<a href="{{ include.post.publicationurl }}">Published version</a>{% endif %}
-      {% if include.post.publicationurl and include.post.paperurl %} · {% endif %}
-      {% if include.post.paperurl %}<a href="{{ include.post.paperurl }}">Paper</a>{% endif %}
+      <a href="{{ include.post.paperurl }}">PDF</a>
     </p>
   {% endif %}
 </div>

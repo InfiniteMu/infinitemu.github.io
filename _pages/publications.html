@@ -15,6 +15,9 @@ author_profile: false
       {% if post.category != category[0] %}
         {% continue %}
       {% endif %}
+      {% if post.hidden %}
+        {% continue %}
+      {% endif %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
@@ -24,6 +27,9 @@ author_profile: false
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
+    {% if post.hidden %}
+      {% continue %}
+    {% endif %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
@@ -32,4 +38,3 @@ author_profile: false
 {% if site.author.googlescholar %}
   <div class="wordwrap">You can also find my work on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
 {% endif %}
-

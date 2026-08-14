@@ -4,8 +4,9 @@
   <section class="home-section" aria-labelledby="home-education">
     <h2 id="home-education">Education</h2>
     <div class="education-list">
-      <p class="education-item"><strong>Johns Hopkins University</strong> · Ph.D. Candidate in Economics</p>
-      <p class="education-item"><strong>Beijing Normal University</strong> · M.S. in Probability and Mathematical Statistics; B.S. in Statistics</p>
+      <p class="education-item"><strong>Johns Hopkins University</strong> · Ph.D., Economics; M.A., Economics</p>
+      <p class="education-item"><strong>University of Oregon</strong> · M.S., Economics</p>
+      <p class="education-item"><strong>Beijing Normal University</strong> · M.S., Probability and Mathematical Statistics; B.S., Statistics</p>
     </div>
   </section>
 
@@ -17,6 +18,9 @@
     <h3 class="home-section__subheading">Working Papers</h3>
     {% if working_paper_posts.size > 0 %}
       {% for post in working_paper_posts reversed %}
+        {% if post.hidden %}
+          {% continue %}
+        {% endif %}
         {% include home-research-entry.html post=post %}
       {% endfor %}
     {% else %}
@@ -26,6 +30,9 @@
     {% if publication_posts.size > 0 %}
       <h3 class="home-section__subheading">Publications</h3>
       {% for post in publication_posts reversed %}
+        {% if post.hidden %}
+          {% continue %}
+        {% endif %}
         {% include home-research-entry.html post=post %}
       {% endfor %}
     {% endif %}
