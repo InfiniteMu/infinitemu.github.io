@@ -302,6 +302,12 @@ a {
   text-transform: uppercase;
 }
 
+.home-section__context {
+  margin: 1.25rem 0 0.95rem;
+  color: var(--global-text-color-light);
+  font-style: italic;
+}
+
 .home-entry h3,
 .home-entry h4 {
   margin: 0 0 0.25rem;
@@ -324,6 +330,20 @@ a {
 
 .home-entry p {
   margin: 0.25rem 0 0.65rem;
+}
+
+.home-entry--teaching {
+  margin: 0.55rem 0 0.8rem;
+}
+
+.home-entry--teaching p {
+  margin: 0;
+  line-height: 1.65;
+}
+
+.home-entry--teaching strong {
+  color: var(--global-text-color);
+  font-weight: 700;
 }
 
 .home-section__empty {

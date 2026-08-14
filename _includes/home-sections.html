@@ -40,18 +40,20 @@
 
   <section id="teaching" class="home-section" aria-labelledby="home-teaching">
     <h2 id="home-teaching">Teaching</h2>
+    <p class="home-section__context">Teaching Assistant, Johns Hopkins University</p>
     {% for post in site.teaching reversed %}
-      <div class="home-entry">
-        <h3>{{ post.title }}</h3>
+      <div class="home-entry home-entry--teaching">
         <p>
-          {% if post.role %}<span>{{ post.role }}</span>{% endif %}
-          {% if post.type %}<span>{{ post.type }}</span>{% endif %}
-          {% if post.venue %}<span>{{ post.venue | replace: "Univeristy", "University" }}</span>{% endif %}
-          {% if post.term %}<span>{{ post.term }}</span>{% elsif post.date %}<span>{{ post.date | date: "%Y" }}</span>{% endif %}
+          <strong>{{ post.title }}</strong>
+          {% if post.term %}
+            &middot; <span>{{ post.term }}</span>
+          {% elsif post.date %}
+            &middot; <span>{{ post.date | date: "%Y" }}</span>
+          {% endif %}
+          {% if post.github %}
+            &middot; <a href="{{ post.github }}">Course materials on GitHub</a>
+          {% endif %}
         </p>
-        {% if post.github %}
-          <p><a href="{{ post.github }}">Course materials on GitHub</a></p>
-        {% endif %}
       </div>
     {% endfor %}
   </section>
