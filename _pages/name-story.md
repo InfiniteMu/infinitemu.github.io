@@ -1,5 +1,5 @@
 ---
-title: "The Story Behind My Name"
+title: "Behind My Name"
 permalink: /name-story/
 layout: single
 author_profile: true
