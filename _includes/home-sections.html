@@ -14,6 +14,7 @@
     <h2 id="home-research">Research</h2>
     {% assign publication_posts = site.publications | where: "category", "publications" %}
     {% assign working_paper_posts = site.publications | where: "category", "workingpapers" %}
+    {% assign work_in_progress_posts = site.publications | where: "category", "workinprogress" %}
 
     <h3 class="home-section__subheading">Working Papers</h3>
     {% if working_paper_posts.size > 0 %}
@@ -36,6 +37,14 @@
         {% include home-research-entry.html post=post %}
       {% endfor %}
     {% endif %}
+
+    <h3 class="home-section__subheading">Work in Progress</h3>
+    {% for post in work_in_progress_posts reversed %}
+      {% if post.hidden %}
+        {% continue %}
+      {% endif %}
+      {% include home-research-entry.html post=post %}
+    {% endfor %}
   </section>
 
   <section id="teaching" class="home-section" aria-labelledby="home-teaching">
