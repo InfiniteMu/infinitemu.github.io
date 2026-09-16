@@ -4,6 +4,8 @@
   <h4>
     {% if include.post.publicationurl %}
       <a href="{{ include.post.publicationurl }}">{{ include.post.title }}</a>
+    {% elsif include.post.ssrnurl %}
+      <a href="{{ include.post.ssrnurl }}">{{ include.post.title }}</a>
     {% elsif include.post.link %}
       <a href="{{ include.post.link }}">{{ include.post.title }}</a>
     {% elsif include.post.nolink %}
@@ -11,7 +13,6 @@
     {% else %}
       <a href="{{ include.post.url | prepend: base_path }}">{{ include.post.title }}</a>
     {% endif %}
-    {% if include.post.ssrnurl %}<a href="{{ include.post.ssrnurl }}">[Link]</a>{% endif %}
   </h4>
   {% if include.post.coauthors %}
     <p>
