@@ -11,6 +11,7 @@
     {% else %}
       <a href="{{ include.post.url | prepend: base_path }}">{{ include.post.title }}</a>
     {% endif %}
+    {% if include.post.ssrnurl %}<a href="{{ include.post.ssrnurl }}">[SSRN]</a>{% endif %}
   </h4>
   {% if include.post.coauthors %}
     <p>

@@ -5,6 +5,7 @@ category: workingpapers
 permalink: /publication/correlation-neglect
 excerpt: ''
 nolink: true
+ssrnurl: "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7423579"
 coauthors:
   - name: "Xinyang Wang"
     url: "https://www.xinyang-wang.com/"
