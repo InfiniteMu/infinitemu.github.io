@@ -1,5 +1,5 @@
 ---
-title: "When Image Matters"
+title: "Strategic Over-Prevention"
 collection: publications
 category: workinprogress
 permalink: /publication/when-image-matters
